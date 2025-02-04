@@ -1,0 +1,11 @@
+kind: Pod
+apiVersion: v1
+metadata:
+  name: annotations
+  annotations:
+    imageregistry: "https://hub.docker.com/repository/docker/mahiketh/frontend/tags/v1/sha256-91919ff308ee589f135c9f02963323953a150ac4d7a68c322d316f8cf99d6670"
+    buildURL: "http://jenkins.mahdo.site/expense/backend/build/97"
+spec:
+  containers:
+  - name: nginx
+    image: nginx
