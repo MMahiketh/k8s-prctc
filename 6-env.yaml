@@ -1,0 +1,15 @@
+kind: Pod
+apiVersion: v1
+metadata:
+  name: env-var
+spec:
+  containers:
+  - name: nginx
+    image: nginx
+    env:
+    - name: name
+      value: Mahiketh
+    - name: last_name
+      value: Maharajula
+    - name: learn
+      value: kubernetes
