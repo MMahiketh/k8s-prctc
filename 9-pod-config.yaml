@@ -17,8 +17,3 @@ spec:
         configMapKeyRef:
           name: test-config
           key: project
-    - name: duration
-      valueFrom:
-        configMapKeyRef:
-          name: test-config
-          key: duration
