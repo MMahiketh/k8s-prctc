@@ -1,0 +1,11 @@
+kind: Pod
+apiVersion: v1
+metadata:
+  name: multi-cont
+spec:
+  containers:
+  - name: nginx
+    image: nginx
+  - name: almalz
+    image: almalinux:9
+    command: "sleep 1000"
