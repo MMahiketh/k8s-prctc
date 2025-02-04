@@ -1,0 +1,24 @@
+kind: Pod
+apiVersion: v1
+metadata:
+  name: pod-config
+spec:
+  containers:
+  - name: nginx
+    image: nginx
+    env:
+    - name: module
+      valueFrom:
+        configMapKeyRef:
+          name: test-config
+          key: module
+    - name: project
+      valueFrom:
+        configMapKeyRef:
+          name: test-config
+          key: project
+    - name: duration
+      valueFrom:
+        configMapKeyRef:
+          name: nginx-config
+          key: duration
