@@ -32,5 +32,5 @@ spec:
   ports:
   - name: nginx-port
     protocol: TCP
-    prot: 80
+    port: 80
     targetPort: 80
