@@ -44,3 +44,17 @@ spec:
   - name: ebs-static
     persistentVolumeClaim:
       claimName: ebs-static
+---
+kind: Service
+apiVersion: v1
+metadata:
+  name: ebs-static
+spec:
+  type: NodePort
+  selector:
+    purpose: ebs-static
+  ports:
+  - name: ebs-static-port
+    protocol: TCP
+    port: 80
+    targetPort: 80
