@@ -4,7 +4,7 @@ metadata:
   name: expense-efs
 spec:
   storageClassName: ""
-  PersistentVolumeReclaimPolicy: Retain
+  persistentVolumeReclaimPolicy: Retain
   volumeMode: Filesystem
   accessModes:
   - ReadWriteMany
