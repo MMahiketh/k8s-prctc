@@ -1,0 +1,11 @@
+kind: PersistentVolumeClaim
+apiVersion: v1
+metadata:
+  name: efs-dynamic
+spec:
+  storageClassName: "efs-expense"
+  accessModes:
+  - ReadWriteMany
+  resources:
+    requests:
+      storage: 3Gi
